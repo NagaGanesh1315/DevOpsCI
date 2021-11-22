@@ -101,6 +101,6 @@ public class TetrisFieldTests
 		}
 		field.adjust(1,4, new Block(Color.BLUE));
 		field.clearRows();
-		assertNotNull("Error: clearRow does not move blocks down", field.getBlock(1,4).getColor());
+		assertNull("Error: clearRow does not move blocks down", field.getBlock(1,4).getColor());
 	}
 }
